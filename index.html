@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tycoon · Web3 Marketing · Community · KOL</title>
+<meta name="description" content="Tycoon (@maskedtycoon). Web3 marketer, community manager, KOL and partnerships. 4+ years. Open for campaigns." />
+<meta property="og:image" content="https://pbs.twimg.com/profile_images/2063855868886609920/ND5hlvSt.jpg" />
+<style>
+  :root { --bg:#f3f7ff; --card:#fff; --card2:#e7efff; --line:#d5e3fb; --gold:#1d4ed8; --gold2:#1e40af; --gold-dim:rgba(29,78,216,.1); --text:#0c1730; --mute:#4c6288; --soft:#7b8eaf; }
+  [data-theme="dark"] { --bg:#07101f; --card:#0e1a30; --card2:#13243f; --line:#1e3358; --gold:#3b82f6; --gold2:#93c5fd; --gold-dim:rgba(59,130,246,.14); --text:#f3f7ff; --mute:#b7c7e3; --soft:#7f93b5; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  body:before { content:""; position:fixed; inset:0; pointer-events:none; background-image:linear-gradient(rgba(29,78,216,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(29,78,216,.06) 1px, transparent 1px); background-size:56px 56px; }
+  .wrap { width:min(1080px, calc(100% - 36px)); margin:0 auto; position:relative; }
+  a { color:inherit; text-decoration:none; } img { display:block; max-width:100%; }
+  header { position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+  .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+  .logo { letter-spacing:.2em; font-size:12px; color:var(--gold2); font-weight:700; }
+  nav { display:flex; gap:18px; align-items:center; font-size:13px; color:var(--mute); }
+  .tog { border:1px solid var(--line); background:transparent; color:var(--mute); border-radius:999px; padding:6px 12px; font-size:11px; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; }
+  .hero { display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; padding:72px 0 48px; }
+  .avail { display:inline-flex; gap:8px; align-items:center; color:var(--gold2); font-size:12px; letter-spacing:.16em; text-transform:uppercase; margin-bottom:18px; font-weight:700; }
+  .avail i { width:7px; height:7px; border-radius:50%; background:var(--gold); }
+  h1 { font-size:clamp(56px, 9vw, 92px); font-weight:800; letter-spacing:-.05em; line-height:.88; margin-bottom:14px; }
+  .sub, .lead, .stat span, .card p, .work p { color:var(--mute); }
+  .sub { margin-bottom:22px; font-size:16px; } .sub b { color:var(--gold2); font-weight:600; }
+  .obj { max-width:540px; border-left:3px solid var(--gold); background:var(--gold-dim); padding:16px 18px; border-radius:0 12px 12px 0; }
+  .obj small { display:block; color:var(--gold2); letter-spacing:.14em; font-size:11px; text-transform:uppercase; margin-bottom:6px; font-weight:700; }
+  .row { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
+  .btn { display:inline-flex; border-radius:999px; padding:11px 18px; font-size:14px; font-weight:600; border:1px solid transparent; }
+  .fill { background:var(--gold); color:#fff; } .ghost { border:1px solid var(--line); background:var(--card); }
+  .portrait, .stat, .card, .work { background:var(--card); border:1px solid var(--line); border-radius:18px; }
+  .portrait { padding:14px; border-radius:28px; }
+  .portrait img { width:100%; border-radius:20px; aspect-ratio:1; object-fit:cover; background:#123; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .chip { font-size:12px; color:var(--gold2); background:var(--gold-dim); border:1px solid var(--line); border-radius:999px; padding:6px 10px; font-weight:600; }
+  section { padding:28px 0 8px; }
+  .kicker { color:var(--gold2); letter-spacing:.14em; font-size:12px; font-weight:700; margin-bottom:8px; }
+  h2 { font-size:clamp(28px, 4vw, 40px); letter-spacing:-.04em; margin-bottom:12px; }
+  .lead { max-width:700px; margin-bottom:18px; }
+  .stats, .grid2, .grid3 { display:grid; gap:12px; }
+  .stats { grid-template-columns:repeat(4,1fr); } .grid2 { grid-template-columns:1fr 1fr; } .grid3 { grid-template-columns:repeat(3,1fr); }
+  .stat, .card, .work { padding:18px; }
+  .stat strong { display:block; font-size:28px; letter-spacing:-.04em; }
+  .num { color:var(--gold2); font-size:12px; letter-spacing:.14em; font-weight:700; }
+  .card h3, .work h3 { margin:8px 0; font-size:18px; }
+  .work a { color:var(--gold2); font-weight:600; font-size:13px; display:inline-block; margin-top:12px; }
+  .shot { border-radius:14px; border:1px solid var(--line); margin-top:12px; width:100%; }
+  .quote { margin:22px 0; padding:22px; border-radius:18px; background:var(--card2); border:1px solid var(--line); font-size:18px; }
+  .quote small { display:block; margin-top:8px; color:var(--mute); font-size:13px; }
+  .hire { text-align:center; padding:42px 0 64px; }
+  footer { border-top:1px solid var(--line); color:var(--soft); font-size:13px; display:flex; justify-content:space-between; padding:18px 0 28px; }
+  @media (max-width:800px) { .hero, .grid3, .grid2, .stats { grid-template-columns:1fr; } nav a { display:none; } }
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#top">TYCOON</a><nav><a href="#work">Work</a><a href="#offer">Offer</a><a href="#hire">Hire</a><button class="tog" id="theme" type="button">Dark</button></nav></div></header>
+<main class="wrap" id="top">
+  <section class="hero">
+    <div>
+      <p class="avail"><i></i> Open for campaigns</p>
+      <h1>Tycoon</h1>
+      <p class="sub">Marketer <b>·</b> Community <b>·</b> KOL <b>·</b> Partnerships</p>
+      <div class="obj"><small>// objective_</small>4+ years in crypto marketing, community, KOL networking, and partnerships. Above all, try.</div>
+      <div class="row"><a class="btn fill" href="https://x.com/maskedtycoon" target="_blank" rel="noopener">DM on X</a><a class="btn ghost" href="#work">See the work</a></div>
+    </div>
+    <div class="portrait"><img src="https://pbs.twimg.com/profile_images/2063855868886609920/ND5hlvSt.jpg" alt="Tycoon" /><div class="chips"><span class="chip">@maskedtycoon</span><span class="chip">3.9K on X</span><span class="chip">CryptoTycoon</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// about_</p><h2>Who I am</h2>
+    <p class="lead">Web3 marketer, community manager, KOL, and partnerships. I run X growth, Telegram rooms, influencer outreach, and giveaway campaigns that people actually enter.</p>
+    <p class="lead">Open for paid promotion, community roles, and project campaigns.</p>
+    <div class="stats"><div class="stat"><strong>3.9K</strong><span>X followers</span></div><div class="stat"><strong>100+</strong><span>Giveaways hosted</span></div><div class="stat"><strong>15.9K</strong><span>Views on $1,000 drop</span></div><div class="stat"><strong>4+ yrs</strong><span>In crypto marketing</span></div></div>
+  </section>
+  <section id="offer">
+    <p class="kicker">// what you are hiring_</p><h2>What I offer</h2>
+    <div class="grid3">
+      <article class="card"><p class="num">01</p><h3>KOL marketing</h3><p>Promotion, outreach, and campaigns. The post is the start. The replies are the room.</p></article>
+      <article class="card"><p class="num">02</p><h3>Community</h3><p>Management and moderation on X and Telegram. Giveaways and engagement that stay in the group.</p></article>
+      <article class="card"><p class="num">03</p><h3>Partnerships</h3><p>Collabs, project promotion, and a network that can actually be called.</p></article>
+    </div>
+  </section>
+  <section id="work">
+    <p class="kicker">// selected work_</p><h2>Proof of work</h2>
+    <div class="grid2">
+      <article class="work"><p class="num">$1,000 GIVEAWAY</p><h3>One winner at 5K</h3><p>287 likes, 240 reposts, 355 replies, 15.9K views. Follow, like, RT, drop a SOL address.</p><img class="shot" src="https://pbs.twimg.com/media/G_nE0BCW8AAspPA.jpg" alt="1000 dollar giveaway" /><a href="https://x.com/maskedtycoon/status/2015858716499685546" target="_blank" rel="noopener">Open post →</a></article>
+      <article class="work"><p class="num">$100 SOL</p><h3>Back, and paying it</h3><p>148 likes, 119 reposts, 150 replies, 5.3K views. Winner picked in 15 hours. His own money, no gimmick.</p><img class="shot" src="https://pbs.twimg.com/media/HCGVM2JXIAATdYj.jpg" alt="100 dollar SOL giveaway" /><a href="https://x.com/maskedtycoon/status/2027065364610158931" target="_blank" rel="noopener">Open post →</a></article>
+    </div>
+    <div class="quote">“I’ve hosted around 100+ giveaways. This is my money. No gimmicks.”<small>From the return post. 3K followers actively in the rounds.</small></div>
+  </section>
+  <section class="hire" id="hire"><p class="kicker">// let’s work_</p><h2>Open for campaigns</h2><p class="lead" style="margin:0 auto 18px">Promotion, community, KOL outreach, or a partnership. Reach him on X.</p><div class="row" style="justify-content:center"><a class="btn fill" href="https://x.com/maskedtycoon" target="_blank" rel="noopener">@maskedtycoon</a></div></section>
+</main>
+<footer class="wrap"><span>Tycoon</span><span>@maskedtycoon</span></footer>
+<script>const btn=document.getElementById("theme");btn.onclick=()=>{const d=document.body.dataset.theme==="dark";document.body.dataset.theme=d?"":"dark";btn.textContent=d?"Dark":"Light";};</script>
+</body></html>
